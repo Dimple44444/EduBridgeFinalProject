@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Amazon.BuyProduct" class="method navigator-link" hash-for-method="buyProduct">buyProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Amazon.Login" class="method navigator-link" hash-for-method="handleCaptcha">handleCaptcha</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Amazon.Login" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Amazon.AddProductToCart" class="method navigator-link" hash-for-method="addToCart">addToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Amazon.BuyProduct" class="method navigator-link" hash-for-method="openApp">openApp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Amazon.SearchProduct" class="method navigator-link" hash-for-method="openApp">openApp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Amazon.AddProductToCart" class="method navigator-link" hash-for-method="openApp">openApp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Amazon.Login" class="method navigator-link" hash-for-method="openApp">openApp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Amazon.SearchProduct" class="method navigator-link" hash-for-method="searchProduct">searchProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Amazon.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="handleCaptcha">
+                  </a> <!-- handleCaptcha -->
+                  <span class="method-name">handleCaptcha</span>
+                  <div class="stack-trace">java.lang.UnsatisfiedLinkError: Unable to load library &apos;tesseract&apos;:
+dlopen(libtesseract.dylib, 9): image not found
+dlopen(libtesseract.dylib, 9): image not found
+dlopen(/Users/nikitasingh/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+dlopen(/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+dlopen(/System/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+Native library (darwin-x86-64/libtesseract.dylib) not found in resource path (/Users/nikitasingh/eclipse/jee-2023-12/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/985/0/.cp/lib/testng-remote.jar:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/test-classes:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/classes:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/nikitasingh/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/nikitasingh/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nikitasingh/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nikitasingh/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/nikitasingh/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/nikitasingh/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/nikitasingh/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/nikitasingh/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/nikitasingh/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/nikitasingh/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/nikitasingh/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/github/bonigarcia/webdrivermanager/5.4.1/webdrivermanager-5.4.1.jar:/Users/nikitasingh/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/nikitasingh/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java/3.3.2/docker-java-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-core/3.3.2/docker-java-core-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-api/3.3.2/docker-java-api-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.2/docker-java-transport-httpclient5-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport/3.3.2/docker-java-transport-3.3.2.jar:/Users/nikitasingh/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/nikitasingh/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/nikitasingh/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nikitasingh/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/tess4j/tess4j/5.8.0/tess4j-5.8.0.jar:/Users/nikitasingh/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/nikitasingh/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox/2.0.29/pdfbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/fontbox/2.0.29/fontbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-tools/2.0.29/pdfbox-tools-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-debugger/2.0.29/pdfbox-debugger-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/jbig2-imageio/3.0.4/jbig2-imageio-3.0.4.jar:/Users/nikitasingh/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/lept4j/lept4j/1.18.1/lept4j-1.18.1.jar:/Users/nikitasingh/.m2/repository/org/jboss/jboss-vfs/3.2.17.Final/jboss-vfs-3.2.17.Final.jar:/Users/nikitasingh/.m2/repository/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar)
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:323)
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:483)
+	at com.sun.jna.Library$Handler.&lt;init&gt;(Library.java:197)
+	at com.sun.jna.Native.load(Native.java:622)
+	at com.sun.jna.Native.load(Native.java:596)
+	at net.sourceforge.tess4j.util.LoadLibs.getTessAPIInstance(LoadLibs.java:83)
+	at net.sourceforge.tess4j.TessAPI.&lt;clinit&gt;(TessAPI.java:42)
+	at net.sourceforge.tess4j.Tesseract.init(Tesseract.java:442)
+	at net.sourceforge.tess4j.Tesseract.doOCR(Tesseract.java:238)
+	at net.sourceforge.tess4j.Tesseract.doOCR(Tesseract.java:210)
+	at Amazon.Login.handleCaptcha(Login.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(libtesseract.dylib, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:211)
+		... 36 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(libtesseract.dylib, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:224)
+		... 36 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/Users/nikitasingh/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:268)
+		... 36 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:268)
+		... 36 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/System/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:268)
+		... 36 more
+	Suppressed: java.io.IOException: Native library (darwin-x86-64/libtesseract.dylib) not found in resource path (/Users/nikitasingh/eclipse/jee-2023-12/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/985/0/.cp/lib/testng-remote.jar:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/test-classes:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/classes:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/nikitasingh/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/nikitasingh/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nikitasingh/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nikitasingh/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/nikitasingh/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/nikitasingh/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/nikitasingh/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/nikitasingh/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/nikitasingh/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/nikitasingh/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/nikitasingh/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/github/bonigarcia/webdrivermanager/5.4.1/webdrivermanager-5.4.1.jar:/Users/nikitasingh/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/nikitasingh/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java/3.3.2/docker-java-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-core/3.3.2/docker-java-core-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-api/3.3.2/docker-java-api-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.2/docker-java-transport-httpclient5-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport/3.3.2/docker-java-transport-3.3.2.jar:/Users/nikitasingh/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/nikitasingh/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/nikitasingh/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nikitasingh/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/tess4j/tess4j/5.8.0/tess4j-5.8.0.jar:/Users/nikitasingh/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/nikitasingh/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox/2.0.29/pdfbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/fontbox/2.0.29/fontbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-tools/2.0.29/pdfbox-tools-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-debugger/2.0.29/pdfbox-debugger-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/jbig2-imageio/3.0.4/jbig2-imageio-3.0.4.jar:/Users/nikitasingh/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/lept4j/lept4j/1.18.1/lept4j-1.18.1.jar:/Users/nikitasingh/.m2/repository/org/jboss/jboss-vfs/3.2.17.Final/jboss-vfs-3.2.17.Final.jar:/Users/nikitasingh/.m2/repository/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar)
+		at com.sun.jna.Native.extractFromResourcePath(Native.java:1145)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:295)
+		... 36 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
+  (Session info: chrome=122.0.6261.69)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3.1&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6dda04aae5633da308f05a475687a5d8, findElement {using=id, value=ap_email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: /var/folders/j4/1k333g8x0l3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58833/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6dda04aae5633da308f05a475687a5d8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Amazon.Login.login(Login.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Amazon.BuyProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyProduct">
+                  </a> <!-- buyProduct -->
+                  <span class="method-name">buyProduct</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3.1&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3d1d7fdb5f7ac2d96b426975b1f65810, findElement {using=id, value=pp-ocqN0N-142}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: /var/folders/j4/1k333g8x0l3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58824/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d1d7fdb5f7ac2d96b426975b1f65810
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Amazon.BuyProduct.buyProduct(BuyProduct.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 41 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Amazon.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openApp">
+                  </a> <!-- openApp -->
+                  <span class="method-name">openApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Amazon.BuyProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openApp">
+                  </a> <!-- openApp -->
+                  <span class="method-name">openApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Amazon.SearchProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openApp">
+                  </a> <!-- openApp -->
+                  <span class="method-name">openApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct">
+                  </a> <!-- searchProduct -->
+                  <span class="method-name">searchProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Amazon.AddProductToCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCart">
+                  </a> <!-- addToCart -->
+                  <span class="method-name">addToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openApp">
+                  </a> <!-- openApp -->
+                  <span class="method-name">openApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/j4/1k333g8x0l36x41z98lr3rr80000gn/T/testng-eclipse--554156407/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Amazon.Login&quot;/&gt;
+      &lt;class name=&quot;Amazon.BuyProduct&quot;/&gt;
+      &lt;class name=&quot;Amazon.AddProductToCart&quot;/&gt;
+      &lt;class name=&quot;Amazon.SearchProduct&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'buyProduct')
+data.setCell(0, 2, 'Amazon.BuyProduct')
+data.setCell(0, 3, 196765);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addToCart')
+data.setCell(1, 2, 'Amazon.AddProductToCart')
+data.setCell(1, 3, 13962);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'openApp')
+data.setCell(2, 2, 'Amazon.SearchProduct')
+data.setCell(2, 3, 11838);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'openApp')
+data.setCell(3, 2, 'Amazon.AddProductToCart')
+data.setCell(3, 3, 9449);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'searchProduct')
+data.setCell(4, 2, 'Amazon.SearchProduct')
+data.setCell(4, 3, 4493);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'handleCaptcha')
+data.setCell(5, 2, 'Amazon.Login')
+data.setCell(5, 3, 3476);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'openApp')
+data.setCell(6, 2, 'Amazon.BuyProduct')
+data.setCell(6, 3, 1448);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'openApp')
+data.setCell(7, 2, 'Amazon.Login')
+data.setCell(7, 3, 774);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'login')
+data.setCell(8, 2, 'Amazon.Login')
+data.setCell(8, 3, 49);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.AddProductToCart</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.BuyProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4183 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6410 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.SearchProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8659 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openApp</span>
+                <span class="method-start">10692 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">handleCaptcha</span>
+                <span class="method-start">11488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
+                <span class="method-start">14975 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.BuyProduct</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openApp</span>
+                <span class="method-start">15029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">buyProduct</span>
+                <span class="method-start">16483 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.AddProductToCart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openApp</span>
+                <span class="method-start">213252 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addToCart</span>
+                <span class="method-start">222703 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.SearchProduct</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openApp</span>
+                <span class="method-start">236670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchProduct</span>
+                <span class="method-start">248512 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">253008 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.AddProductToCart</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">253831 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.BuyProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">254556 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Amazon.SearchProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">254557 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

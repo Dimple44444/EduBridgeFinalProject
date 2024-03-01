@@ -1,0 +1,334 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 29 23:30:41 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>68 seconds (68266 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Amazon.BuyProduct.buyProduct()'><b>buyProduct</b><br>Test class: Amazon.BuyProduct</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: twotabsearchtextbox
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3.1&apos;, java.version: &apos;21.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Amazon.BuyProduct.buyProduct(BuyProduct.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1705761583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1705761583'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: twotabsearchtextbox
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3.1&apos;, java.version: &apos;21.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Amazon.BuyProduct.buyProduct(BuyProduct.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>66</td>
+<td>Amazon.BuyProduct@478190fc</td></tr>
+<tr>
+<td title='Amazon.Login.handleCaptcha()'><b>handleCaptcha</b><br>Test class: Amazon.Login</td>
+<td><div><pre>java.lang.UnsatisfiedLinkError: Unable to load library &apos;tesseract&apos;:
+dlopen(libtesseract.dylib, 9): image not found
+dlopen(libtesseract.dylib, 9): image not found
+dlopen(/Users/nikitasingh/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+dlopen(/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+dlopen(/System/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+Native library (darwin-x86-64/libtesseract.dylib) not found in resource path (/Users/nikitasingh/eclipse/jee-2023-12/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/985/0/.cp/lib/testng-remote.jar:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/test-classes:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/classes:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/nikitasingh/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/nikitasingh/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nikitasingh/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nikitasingh/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/nikitasingh/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/nikitasingh/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/nikitasingh/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/nikitasingh/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/nikitasingh/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/nikitasingh/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/nikitasingh/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/github/bonigarcia/webdrivermanager/5.4.1/webdrivermanager-5.4.1.jar:/Users/nikitasingh/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/nikitasingh/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java/3.3.2/docker-java-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-core/3.3.2/docker-java-core-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-api/3.3.2/docker-java-api-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.2/docker-java-transport-httpclient5-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport/3.3.2/docker-java-transport-3.3.2.jar:/Users/nikitasingh/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/nikitasingh/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/nikitasingh/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nikitasingh/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/tess4j/tess4j/5.8.0/tess4j-5.8.0.jar:/Users/nikitasingh/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/nikitasingh/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox/2.0.29/pdfbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/fontbox/2.0.29/fontbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-tools/2.0.29/pdfbox-tools-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-debugger/2.0.29/pdfbox-debugger-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/jbig2-imageio/3.0.4/jbig2-imageio-3.0.4.jar:/Users/nikitasingh/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/lept4j/lept4j/1.18.1/lept4j-1.18.1.jar:/Users/nikitasingh/.m2/repository/org/jboss/jboss-vfs/3.2.17.Final/jboss-vfs-3.2.17.Final.jar:/Users/nikitasingh/.m2/repository/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar)
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:323)
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:483)
+	at com.sun.jna.Library$Handler.&lt;init&gt;(Library.java:197)
+	at com.sun.jna.Native.load(Native.java:622)
+	at com.sun.jna.Native.load(Native.java:596)
+	at net.sourceforge.tess4j.util.LoadLibs.getTessAPIInstance(LoadLibs.java:83)
+	at net.sourceforge.tess4j.TessAPI.&lt;clinit&gt;(TessAPI.java:42)
+	at net.sourceforge.tess4j.Tesseract.init(Tesseract.java:442)
+	at net.sourceforge.tess4j.Tesseract.doOCR(Tesseract.java:238)
+	at net.sourceforge.tess4j.Tesseract.doOCR(Tesseract.java:210)
+	at Amazon.Login.handleCaptcha(Login.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(libtesseract.dylib, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:211)
+		... 23 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(libtesseract.dylib, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:224)
+		... 23 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/Users/nikitasingh/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:268)
+		... 23 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:268)
+		... 23 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/System/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:268)
+		... 23 more
+	Suppressed: java.io.IOException: Native library (darwin-x86-64/libtesseract.dylib) not found in resource path (/Users/nikitasingh/eclipse/jee-2023-12/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/985/0/.cp/lib/testng-remote.jar:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/test-classes:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/classes:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/nikitasingh/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/nikitasingh/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nikitasingh/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nikitasingh/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/nikitasingh/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/nikitasingh/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/nikitasingh/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/nikitasingh/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/nikitasingh/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/nikitasingh/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/nikitasingh/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/github/bonigarcia/webdrivermanager/5.4.1/webdrivermanager-5.4.1.jar:/Users/nikitasingh/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/nikitasingh/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java/3.3.2/docker-java-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-core/3.3.2/docker-java-core-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-api/3.3.2/docker-java-api-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.2/docker-java-transport-httpclient5-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport/3.3.2/docker-java-transport-3.3.2.jar:/Users/nikitasingh/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/nikitasingh/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/nikitasingh/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nikitasingh/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/tess4j/tess4j/5.8.0/tess4j-5.8.0.jar:/Users/nikitasingh/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/nikitasingh/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox/2.0.29/pdfbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/fontbox/2.0.29/fontbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-tools/2.0.29/pdfbox-tools-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-debugger/2.0.29/pdfbox-debugger-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/jbig2-imageio/3.0.4/jbig2-imageio-3.0.4.jar:/Users/nikitasingh/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/lept4j/lept4j/1.18.1/lept4j-1.18.1.jar:/Users/nikitasingh/.m2/repository/org/jboss/jboss-vfs/3.2.17.Final/jboss-vfs-3.2.17.Final.jar:/Users/nikitasingh/.m2/repository/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar)
+		at com.sun.jna.Native.extractFromResourcePath(Native.java:1145)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:295)
+		... 23 more
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1868447990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1868447990'><pre>java.lang.UnsatisfiedLinkError: Unable to load library &apos;tesseract&apos;:
+dlopen(libtesseract.dylib, 9): image not found
+dlopen(libtesseract.dylib, 9): image not found
+dlopen(/Users/nikitasingh/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+dlopen(/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+dlopen(/System/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+Native library (darwin-x86-64/libtesseract.dylib) not found in resource path (/Users/nikitasingh/eclipse/jee-2023-12/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/985/0/.cp/lib/testng-remote.jar:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/test-classes:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/classes:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/nikitasingh/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/nikitasingh/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nikitasingh/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nikitasingh/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/nikitasingh/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/nikitasingh/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/nikitasingh/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/nikitasingh/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/nikitasingh/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/nikitasingh/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/nikitasingh/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/github/bonigarcia/webdrivermanager/5.4.1/webdrivermanager-5.4.1.jar:/Users/nikitasingh/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/nikitasingh/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java/3.3.2/docker-java-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-core/3.3.2/docker-java-core-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-api/3.3.2/docker-java-api-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.2/docker-java-transport-httpclient5-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport/3.3.2/docker-java-transport-3.3.2.jar:/Users/nikitasingh/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/nikitasingh/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/nikitasingh/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nikitasingh/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/tess4j/tess4j/5.8.0/tess4j-5.8.0.jar:/Users/nikitasingh/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/nikitasingh/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox/2.0.29/pdfbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/fontbox/2.0.29/fontbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-tools/2.0.29/pdfbox-tools-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-debugger/2.0.29/pdfbox-debugger-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/jbig2-imageio/3.0.4/jbig2-imageio-3.0.4.jar:/Users/nikitasingh/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/lept4j/lept4j/1.18.1/lept4j-1.18.1.jar:/Users/nikitasingh/.m2/repository/org/jboss/jboss-vfs/3.2.17.Final/jboss-vfs-3.2.17.Final.jar:/Users/nikitasingh/.m2/repository/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar)
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:323)
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:483)
+	at com.sun.jna.Library$Handler.&lt;init&gt;(Library.java:197)
+	at com.sun.jna.Native.load(Native.java:622)
+	at com.sun.jna.Native.load(Native.java:596)
+	at net.sourceforge.tess4j.util.LoadLibs.getTessAPIInstance(LoadLibs.java:83)
+	at net.sourceforge.tess4j.TessAPI.&lt;clinit&gt;(TessAPI.java:42)
+	at net.sourceforge.tess4j.Tesseract.init(Tesseract.java:442)
+	at net.sourceforge.tess4j.Tesseract.doOCR(Tesseract.java:238)
+	at net.sourceforge.tess4j.Tesseract.doOCR(Tesseract.java:210)
+	at Amazon.Login.handleCaptcha(Login.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(libtesseract.dylib, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:211)
+		... 23 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(libtesseract.dylib, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:224)
+		... 23 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/Users/nikitasingh/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:268)
+		... 23 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:268)
+		... 23 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/System/Library/Frameworks/tesseract.framework/tesseract, 9): image not found
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:268)
+		... 23 more
+	Suppressed: java.io.IOException: Native library (darwin-x86-64/libtesseract.dylib) not found in resource path (/Users/nikitasingh/eclipse/jee-2023-12/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/985/0/.cp/lib/testng-remote.jar:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/test-classes:/Users/nikitasingh/Downloads/EduBridgeFinalProject-master/EduBridgeDemoProject/target/classes:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/nikitasingh/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/nikitasingh/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nikitasingh/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nikitasingh/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nikitasingh/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/nikitasingh/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/nikitasingh/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/nikitasingh/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/nikitasingh/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/nikitasingh/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/nikitasingh/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/nikitasingh/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/nikitasingh/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/nikitasingh/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/nikitasingh/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/nikitasingh/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/nikitasingh/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/nikitasingh/.m2/repository/io/github/bonigarcia/webdrivermanager/5.4.1/webdrivermanager-5.4.1.jar:/Users/nikitasingh/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/nikitasingh/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java/3.3.2/docker-java-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-core/3.3.2/docker-java-core-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-api/3.3.2/docker-java-api-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/nikitasingh/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/nikitasingh/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.2/docker-java-transport-httpclient5-3.3.2.jar:/Users/nikitasingh/.m2/repository/com/github/docker-java/docker-java-transport/3.3.2/docker-java-transport-3.3.2.jar:/Users/nikitasingh/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/nikitasingh/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/nikitasingh/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/nikitasingh/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nikitasingh/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/tess4j/tess4j/5.8.0/tess4j-5.8.0.jar:/Users/nikitasingh/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/nikitasingh/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox/2.0.29/pdfbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/fontbox/2.0.29/fontbox-2.0.29.jar:/Users/nikitasingh/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-tools/2.0.29/pdfbox-tools-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/pdfbox-debugger/2.0.29/pdfbox-debugger-2.0.29.jar:/Users/nikitasingh/.m2/repository/org/apache/pdfbox/jbig2-imageio/3.0.4/jbig2-imageio-3.0.4.jar:/Users/nikitasingh/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:/Users/nikitasingh/.m2/repository/net/sourceforge/lept4j/lept4j/1.18.1/lept4j-1.18.1.jar:/Users/nikitasingh/.m2/repository/org/jboss/jboss-vfs/3.2.17.Final/jboss-vfs-3.2.17.Final.jar:/Users/nikitasingh/.m2/repository/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar)
+		at com.sun.jna.Native.extractFromResourcePath(Native.java:1145)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:295)
+		... 23 more
+</pre></div></td>
+<td>4</td>
+<td>Amazon.Login@6c64cb25</td></tr>
+<tr>
+<td title='Amazon.Login.login()'><b>login</b><br>Test class: Amazon.Login</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
+  (Session info: chrome=122.0.6261.69)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3.1&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ec6411aed7b2c577062e5198b4eb796, findElement {using=id, value=ap_email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: /var/folders/j4/1k333g8x0l3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57286}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57286/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ec6411aed7b2c577062e5198b4eb796
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Amazon.Login.login(Login.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142398140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2142398140'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_email&quot;}
+  (Session info: chrome=122.0.6261.69)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3.1&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ec6411aed7b2c577062e5198b4eb796, findElement {using=id, value=ap_email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: /var/folders/j4/1k333g8x0l3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57286}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57286/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ec6411aed7b2c577062e5198b4eb796
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Amazon.Login.login(Login.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>Amazon.Login@6c64cb25</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Amazon.SearchProduct.openApp()'><b>openApp</b><br>Test class: Amazon.SearchProduct</td>
+<td></td>
+<td>13</td>
+<td>Amazon.SearchProduct@38c6f217</td></tr>
+<tr>
+<td title='Amazon.BuyProduct.openApp()'><b>openApp</b><br>Test class: Amazon.BuyProduct</td>
+<td></td>
+<td>1</td>
+<td>Amazon.BuyProduct@478190fc</td></tr>
+<tr>
+<td title='Amazon.AddProductToCart.openApp()'><b>openApp</b><br>Test class: Amazon.AddProductToCart</td>
+<td></td>
+<td>8</td>
+<td>Amazon.AddProductToCart@399f45b1</td></tr>
+<tr>
+<td title='Amazon.SearchProduct.searchProduct()'><b>searchProduct</b><br>Test class: Amazon.SearchProduct</td>
+<td></td>
+<td>13</td>
+<td>Amazon.SearchProduct@38c6f217</td></tr>
+<tr>
+<td title='Amazon.AddProductToCart.addToCart()'><b>addToCart</b><br>Test class: Amazon.AddProductToCart</td>
+<td></td>
+<td>20</td>
+<td>Amazon.AddProductToCart@399f45b1</td></tr>
+<tr>
+<td title='Amazon.Login.openApp()'><b>openApp</b><br>Test class: Amazon.Login</td>
+<td></td>
+<td>1</td>
+<td>Amazon.Login@6c64cb25</td></tr>
+</table><p>
+</body>
+</html>
